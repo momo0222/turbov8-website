@@ -1,0 +1,224 @@
+@import url('common.css');
+header{
+    background-color: var(--dark-grey);
+}
+header .team-name{
+    background-color: transparent;
+}
+header .nav .nav-items, header .nav .nav-items a {
+    background-color: transparent;
+}
+.top{
+    position: relative;
+    padding-bottom: 0;
+}
+.top-container{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    padding-top: 4rem;
+    row-gap: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top-content{
+    margin-left: 3rem;
+   /* text-align:justify; */
+}
+.top-content h1{
+    font-size: 30px;
+    -webkit-text-stroke: 1px var(--primary-red);
+    text-transform: uppercase;
+    color: transparent;
+    letter-spacing: 1.5px;
+}
+.top-content p{
+    margin-bottom: 2.5rem;
+    text-transform: capitalize;
+}
+.top-image {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 350px;
+    margin: 0 auto;
+}
+.top-image img{
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.top .stats-wrap{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+}
+.top .stats-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+    background: rgba(196, 52, 41, 0.4);
+    transition: 0.3s;
+}
+.top .stats-container:hover{
+    background: rgba(89, 85, 85, 0.2);
+    cursor: pointer;
+}
+.btn{
+    margin-top: 2rem;
+    padding: 10px;
+    font-size: 14px;
+    background-color: var(--primary-red);
+    font-weight: 900;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    transition: 0.3s ease;
+}
+.btn:hover{
+    opacity: 0.8;
+    box-shadow: 2px 2px 10px var(--dark-grey);
+}
+header .nav .nav-items a:hover:before{
+    width: 100%;
+}
+.highlight{
+  display: flex;
+  justify-content: space-between;
+  background: var(--light-grey);
+}
+.swiper{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  margin: 5% 5%;
+}
+
+.swiper-wrapper{
+  margin-top: auto;
+  margin-bottom: auto;
+  cursor: pointer;
+  white-space: nowrap;
+
+}
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.swiper-slide img{
+  height: 80%;
+  width: 80%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.swiper-button-prev::after, .swiper-button-next::after{
+  content: "";
+}
+.arrow{
+  color: #fff;
+  font-size: 4vh;
+}
+.highlight__content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-left: 2.5rem;
+}
+.highlight__content h1{
+    -webkit-text-stroke: 0.2px white;
+    text-transform: uppercase;
+    color: transparent;
+    letter-spacing: 1.5px;
+    font-weight: 900;
+}
+.highlight__content p{
+    margin-top: 3vh;
+    font-size: 16px;
+}
+/*heheh*/
+.sponsor{
+    display: flex;
+    flex-direction: column;
+    margin: 2% 5%;
+}
+.sponsor__title{
+    display: flex;
+    justify-content: center;
+    margin: 3% 0;
+
+}
+.sponsor__title h1{
+    font-weight: 900;
+}
+.sponsor__tags{
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    max-width: 100%;
+    overflow: hidden;
+    gap: 2%;
+}
+.sponsor__card{
+    border: 0.5px solid rgba(200, 180, 200, 0.2);
+    padding: 30px;
+    text-align:  center;
+    transition: all 0.2s;
+}
+.sponsor__card h3{
+    font-size: 20px;
+}
+.sponsor__card-price{
+    font-size: 20px;
+    font-weight: 900;
+}
+.sponsor__card-benefits{
+    margin-top: 2vh;
+}
+.sponsor__card-benefits li{
+    list-style: none;
+    padding-bottom: 5%;
+    color: grey;
+}
+.sponsor__card button{
+    width: 100%;
+    padding: 5px 10px;
+    background: rgba(14, 58, 180, 09);
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.sponsor__card:hover{
+    transform: scale(1.05);
+}
+@media (max-width: 770px){
+ .top-image{
+    display: none;
+ }
+
+ .highlight{
+    flex-direction: column;
+ }
+ .highlight__content{
+    align-items: center;
+    margin: 2rem auto;
+    width: 90%;
+    padding: 10px;
+ }
+ .swiper{
+    width: 85%;
+    
+ }
+}

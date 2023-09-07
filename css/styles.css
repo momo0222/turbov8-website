@@ -1,0 +1,233 @@
+@import url('common.css');
+
+.home, .des {
+
+    max-width: 100%;
+}
+
+.home{
+   padding: 100px 10%; 
+   position: relative;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   background-color: rgb(173, 157, 156);
+}
+.home:before{
+    z-index: 777;
+}
+.home .content{
+    z-index: 888;
+    color: #fff;
+    width: 70%;
+    margin-top: 50px;
+}
+.home .content h1{
+    font-size: 4em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 75px;
+    margin-bottom: 40px;
+}
+.home .content h1 span{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.home .content p{
+    margin-bottom: 65px;
+}
+.home .content a{
+    background: #fff;
+    padding: 15px 35px;
+    color: rgb(43, 160, 238);
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 2px;
+}
+.home .media-icons{
+    z-index: 888;
+    position: absolute;
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s ease;
+}
+.home .media-icons a{
+    color: #fff;
+    font-size: 1.6rem;
+    transition: 0.3s ease;
+}
+.home .media-icons a:not(:last-child){
+    margin-bottom: 20px;
+}
+.home .media-icons a:hover{
+    transform: scale(1.3);
+}
+.home video{
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* .slider-nav{
+    z-index: 888;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(80px);
+    margin-bottom: 12px;
+}
+.slider-nav .nav-btn.active{
+    background: #000;
+}
+.slider-nav .nav-btn{
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(250,250,250,0.5);
+    transition: 0.3s ease;
+}
+.slider-nav .nav-btn:not(:last-child){
+    margin-right: 20px;
+}
+.slider-nav .nav-btn:hover{
+    transform: scale(1.2);
+}
+.video-slide{
+    position: absolute;
+    width: 100%;
+    clip-path: circle(0% at 0 50%);
+}
+.video-slide.active{
+    clip-path: circle(150% at 0 50%);
+    transition: 2s ease;
+    transition-property: clip-path;
+} */
+
+/* description css start*/
+.des{
+    background-color: var(--light-grey);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+    flex: 1;
+    width: 100%;
+    /* overflow: auto; */
+}
+.des h2{
+    color: red;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+#des-title{
+    align-items: center;
+    margin: auto;
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: 5px;
+    font-weight: 900;
+    text-shadow: 1px 1px 2px red;
+}
+.des-event{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.des-image, .des-info{
+    display: flex;
+    flex: 1;
+    transition: 2s ease;
+    
+}
+.des-image.left{
+    margin: 10px;
+    padding: 20px;
+}
+.des-image.right{
+    margin: 10px;
+    padding: 20px;
+}
+.des-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.des-info{
+    margin: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+/* sponsor css*/
+.sponsor{
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: rgb(35, 80, 200);
+}
+.sponsor h1{
+    padding-top: 3rem;
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: #fff;
+    margin-right: auto;
+    margin-left: auto;
+}
+.sponsor-list{
+    margin: 4rem;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    height: 30vh;
+    row-gap: 2rem;
+    column-gap: 2rem;
+}
+.sponsor-content{
+    background: lightblue;
+}
+
+
+@media (max-width: 810px){
+    .home {
+
+    padding: 100px 45px;
+    }
+    /*description css responsive*/
+    .des-event{
+        flex-direction: column;
+        padding: 20px;
+        justify-content: center;
+        display: relative;
+        margin: 0 auto;
+    }
+    .des-info{
+        padding-top: 0px;
+        margin: 0;
+        padding-bottom: 0px;
+    }
+    .des-image.left, .des-image.right{
+        margin: 0;
+    }
+    .sponsor-list{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    
+
+}
+@media (max-width: 450px){
+
+}

@@ -1,0 +1,149 @@
+@import url('common.css');
+
+/* Style the main content */
+body{
+    background-color: var(--light-grey);
+}
+main {
+    max-width: 800px;
+    margin: 100px auto;
+    background-color: var(--light-red-grey);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+main h1{
+    color: #fff;
+}
+/* Add the following styles for the slideshow */
+.slideshow-container {
+    padding-left: 10%;
+    position: relative;
+    margin: 20px 10px;
+}
+
+.robot-slides {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.robot-slides img {
+    width: 90%;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.slider-controls {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.slide-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+/* Style the robot specs and hardware-software sections */
+/* Style the robot specs */
+.robot-specs {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+.robot-specs h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+.robot-specs ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.robot-specs li {
+    margin: 5px 0;
+    font-weight: bold;
+}
+.accordion-slide{
+    margin-top: 5%;
+}
+.accordion-button {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: none;
+    text-align: left;
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+.bx{
+    font-size: 30px;
+}
+
+.accordion-content {
+    display: none;
+    padding: 20px;
+    padding-left: 50px;
+    border-top: 1px solid #ddd;
+}
+.accordion-dropdown{
+    padding-right: 10px;
+}
+/* Style the hardware-software section */
+.hardware-software {
+    margin-top: 20px;
+}
+
+.hardware-software h2 {
+    color: #333;
+    font-size: 24px;
+}
+.social a{
+    background-color: #fff;
+}
+
+
+/* Style the videos section */
+.videos h2 {
+    margin-top: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+}
+
+@media (max-width: 810px){
+    main{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+  
+}
+@media (max-width: 600px){
+    .slideshow-container{
+        padding: 0;
+    }
+    .robot-slides img {
+        height: 300px;
+        width: 100%;
+    }
+}

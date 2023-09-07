@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"  />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Robotics Team - Robot Info</title>
+    <link rel="stylesheet" href="css/robot.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="team-name">Turbo V8</a>
+    <div class="menu-btn"></div>
+    <div class="nav">
+        <div class="nav-items">
+            <a href="index.html">Home</a>
+            <a href="member.html">Members</a>
+            <a href="robot.html">Robot</a>
+            <a href="outreach.html">Outreach</a>
+            <a href="contact.html">Contact</a>
+            <a href="donate.html">Donate</a>
+        </div>
+    </div>
+    </header>
+    <main>
+        <h1>Robotics Team - Season 2023</h1>
+        <section class="robot-info">
+            <div class="slideshow-container">
+                <div class="robot-slides fade">
+                    <img src="assets/imgs/roboPic1.jpg" alt="Robot Image 1">
+                </div>
+                <div class="robot-slides fade">
+                    <img src="assets/imgs/roboPic2.jpg" alt="Robot Image 2">
+                </div>
+                <div class="robot-slides fade">
+                    <img src="assets/imgs/roboPic3.jpg" alt="Robot Image 3">
+                </div>
+                <div class="robot-slides fade">
+                    <img src="assets/imgs/roboPic4.jpg" alt="Robot Image 4">
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="slide-button" id="prev-slide"><i class='bx bx-left-arrow'></i></button>
+                <button class="slide-button" id="next-slide"><i class='bx bx-right-arrow'></i></button>
+            </div>
+            <div class="robot-specs">
+                <h2>Robot Specifications</h2>
+                <ul>
+                    <li>Dimensions: 24x18x12 inches</li>
+                    <li>Weight: 30 pounds</li>
+                    <li>Drive System: Belted Custome Drivetrain</li>
+                    <li>Arm Extension: 28 inches</li>
+                </ul>
+            </div>
+            <div class="hardware-software">
+                <h2>Hardware & Software</h2>
+                <p>Our robot was built using a combination of custom-designed hardware and the following software:</p>
+                <div class="accordion-slide">
+                    <button class="accordion-button">Hardware <i class='bx bx-chevron-down'></i></button>
+                    <div class="accordion-content">
+                        <ul class = "accordion-dropdown">
+                            <li>Custom drivetrain</li>
+                            <li>Scissor linkage - shock absorbent</li>
+                            <li>Counter springing system</li>
+                            <li>Turret and pitch with worm gear</li>
+                            <li>Custom deposit basket</li>
+                        </ul>
+                    </div>
+    
+                    <!-- Accordion Section 2 -->
+                    <button class="accordion-button">Software <i class='bx bx-chevron-down'></i></button>
+                    <div class="accordion-content">
+                        <ul class = "accordion-dropdown">
+                            <li>3 Odometry pods</li>
+                            <li>Pose exponential algorithm</li>
+                            <li>PID controller</li>
+                            <li>OpenCv webcam</li>
+                            <li>Computer vision</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="videos">
+            <h2>Robot in Action</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/uStx4h2GDl4" frameborder="0" allowfullscreen></iframe>
+        </section>
+    </main>
+    <footer>
+        <section class="social">
+            <a href="https://discord.com/"><i class="fa-brands fa-discord"></i></a>
+            <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+        </section>
+        <ul class="copyright">
+            <li>
+                <p>turbov8@gmail.com</p>
+            </li>
+            <li>
+                <p>©2023 TurboV8</p>
+            </li>
+            <li>
+                <p>San Ramon, California</p>
+            </li>
+        </ul>
+        <p class="credits">Created By Joy Wang</p>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/robot.js"></script>
+</body>
+</html>

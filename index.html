@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"  />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header>
+    <a href="#" class="team-name">Turbo V8</a>
+    <div class="menu-btn"></div>
+    <div class="nav">
+        <div class="nav-items">
+            <a href="index.html">Home</a>
+            <a href="member.html">Members</a>
+            <a href="robot.html">Robot</a>
+            <a href="outreach.html">Outreach</a>
+            <a href="contact.html">Contact</a>
+            <a href="donate.html">Donate</a>
+        </div>
+    </div>
+    </header>
+
+<section class="home">
+    <video src="assets/videos/mainvid.mp4" class="video-slide active" autoplay muted loop></video>
+    <!-- <video src="assets/videos/mp42.mp4" class="video-slide" autoplay muted loop></video>
+    <video src="assets/videos/mp43.mp4" class="video-slide" autoplay muted loop></video>
+    <video src="assets/videos/mp44.mp4" class="video-slide" autoplay muted loop></video>
+    <video src="assets/videos/mp45.mp4" class="video-slide" autoplay muted loop></video> -->
+    </video>
+    <div class="content">
+        <h1>This is. <br> <span>turbo v8</span></h1>
+        <p>FIRST Tech Challenge(FTC) robotics team based in San Ramon, California</p>
+        <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="media-icons">
+        <a href="https://discord.com/"><i class="fa-brands fa-discord"></i></a>
+        <a id = "insta" href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://youtubes.com"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    <div class="slider-nav">
+        <div class="nav-btn active"> </div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+    </div>
+</section>
+<section class="des">
+    <h1 id="des-title" data-aos= "fade-down">Who We Are</h1>
+    <div class="des-event">
+        <div data-aos="fade-right" class="des-image left">
+            <img src="assets/imgs/homePic1.jpg" alt="robot-piece">
+        </div>
+        <div data-aos="fade-left"class="des-info right">
+            <h2>Our Goal</h2>
+            <p>We are a community based team filled with youth STEM ambassadors. We hope to inspire and recruit passionate individuals and provide a powerful learning experience through robotics. By learning from each other and seeking daily growth, we transcend traditional disciplinary boundaries in our drive towards the FIRST World Championship.</p>
+        </div>
+    </div>
+    <div class="des-event">
+        <div data-aos="fade-right"class="des-info left">
+            <h2>What We Do</h2>
+            <p>We often passionately interact with community members both locally and internationally, collaborating and mentoring others in STEM and robotics. TurboV8 has frequent team meetings to communicate and build our robots for every season. </p>
+        </div>
+        <div data-aos="fade-left"class="des-image right">
+            <img src="assets/imgs/homePic2.jpg" alt="robot-piece">
+        </div>
+    </div>
+</section>
+<section class="sponsor">
+    <h1 id="sponsor-title">Many thanks to our sponsors</h1>
+    <div class="sponsor-list">
+        <div class="sponsor-content">sponsor tag</div>
+        <div class="sponsor-content">sponsor tag</div>
+        <div class="sponsor-content">sponsor tag</div>
+    </div>
+</section>
+<footer>
+    <section class="social">
+        <a href="https://discord.com/"><i class="fa-brands fa-discord"></i></a>
+        <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+    </section>
+    <ul class="copyright">
+        <li>
+            <p>turbov8@gmail.com</p>
+        </li>
+        <li>
+            <p>©2023 TurboV8</p>
+        </li>
+        <li>
+            <p>San Ramon, California</p>
+        </li>
+    </ul>
+    <p class="credits">Created By Joy Wang</p>
+</footer>
+<script src="js/script.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js">
+  
+</script>
+<script>
+  AOS.init({
+    duration:1000,
+    offset:100
+  });
+</script>
+<script>
+    document.getElementById('vid').play();
+</script>
+</body>
+</html>

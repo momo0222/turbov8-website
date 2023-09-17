@@ -1,0 +1,24 @@
+@import url('common.css');
+*{
+    /* background-color: var(--light-grey); */
+}
+.donate {
+    position: relative;
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+}
+.donate__inner{
+    margin: 30px;
+    border: 2px solid black;
+    padding: 20px;
+    transition: 0.3s all ease;
+}
+.donate__inner:hover{
+    transform: scale(1.02);
+}
+/* footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+} */

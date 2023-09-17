@@ -3,21 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/imgs/favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"  />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Robotics Team - Robot Info</title>
     <link rel="stylesheet" href="css/robot.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <header>
-        <a href="#" class="team-name">Turbo V8</a>
+        <a href="index.html" class="team-name">TurbΩ V8</a>
     <div class="menu-btn"></div>
     <div class="nav">
         <div class="nav-items">
             <a href="index.html">Home</a>
             <a href="member.html">Members</a>
-            <a href="robot.html">Robot</a>
+            <a href="robot.html" class = "on-title">Robot</a>
             <a href="outreach.html">Outreach</a>
             <a href="contact.html">Contact</a>
             <a href="donate.html">Donate</a>
@@ -25,68 +28,85 @@
     </div>
     </header>
     <main>
-        <h1>Robotics Team - Season 2023</h1>
+        <div class="robot-intro">
+            <h1>2023-2024</h1>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur rerum voluptas odio ea exercitationem, corrupti iste, impedit, facilis ab laboriosam dolores ut reprehenderit ipsum? Quia explicabo similique tenetur voluptate corporis!
+            </p>
+        </div>
         <section class="robot-info">
-            <div class="slideshow-container">
-                <div class="robot-slides fade">
-                    <img src="assets/imgs/roboPic1.jpg" alt="Robot Image 1">
+            <h1 class="robot-title">Design Overview</h1>
+            <div class="robot-overview">
+                <div class="robot-pic"data-aos = "fade-up" >
+                    <div class="robot-pic-overlay"></div>
+                    <img class = "image"src="assets/imgs/roboPic1.jpg" alt="robot-pic">
                 </div>
-                <div class="robot-slides fade">
-                    <img src="assets/imgs/roboPic2.jpg" alt="Robot Image 2">
-                </div>
-                <div class="robot-slides fade">
-                    <img src="assets/imgs/roboPic3.jpg" alt="Robot Image 3">
-                </div>
-                <div class="robot-slides fade">
-                    <img src="assets/imgs/roboPic4.jpg" alt="Robot Image 4">
+                <div class="robot-specs"data-aos = "fade-up">
+                    <p>
+                        This season, we went through many complete rebuilds and iterations. We had a total
+of more than 17 small rebuilds, but it can be classified in 4 main rebuilds. By the end, we had a super-improved high speed pitch system, a turret rotation
+speed up to 200° per second, total field control, and a latch for our deposit to ensure accuracy.
+                    </p>
                 </div>
             </div>
-            <div class="slider-controls">
-                <button class="slide-button" id="prev-slide"><i class='bx bx-left-arrow'></i></button>
-                <button class="slide-button" id="next-slide"><i class='bx bx-right-arrow'></i></button>
-            </div>
-            <div class="robot-specs">
-                <h2>Robot Specifications</h2>
-                <ul>
-                    <li>Dimensions: 24x18x12 inches</li>
-                    <li>Weight: 30 pounds</li>
-                    <li>Drive System: Belted Custome Drivetrain</li>
-                    <li>Arm Extension: 28 inches</li>
-                </ul>
-            </div>
-            <div class="hardware-software">
-                <h2>Hardware & Software</h2>
-                <p>Our robot was built using a combination of custom-designed hardware and the following software:</p>
-                <div class="accordion-slide">
-                    <button class="accordion-button">Hardware <i class='bx bx-chevron-down'></i></button>
-                    <div class="accordion-content">
-                        <ul class = "accordion-dropdown">
-                            <li>Custom drivetrain</li>
-                            <li>Scissor linkage - shock absorbent</li>
-                            <li>Counter springing system</li>
-                            <li>Turret and pitch with worm gear</li>
-                            <li>Custom deposit basket</li>
-                        </ul>
+        </section>
+            <section class="robot-awards">
+                <div class="robot-accolades">
+                    <h1 >Accolades</h1>
+                    <p>Our Robot has had an exciting year in competitions. Let's see what we have achieved!</p>
+                    <div class="accordion-slide">
+                        <div class="accordion-box">
+                            <button class="accordion-button">Maryland Tech Invitational <i class='bx bx-chevron-down'></i></button>
+                        <div class="accordion-content ">
+                            <ul class = "accordion-dropdown">
+                               <li> Winning Alliance 2nd Pick</li>
+                            </ul>
+                        </div>
+                        </div>
+                        <div class="accordion-box">
+                        <button class="accordion-button">NorCal FTC Regional Championship <i class='bx bx-chevron-down'></i></button>
+                        <div class="accordion-content">
+                            <ul class = "accordion-dropdown">
+                                <li>3 Innovate Award sponsored by Raytheon Technologies</li>
+                            </ul>
+                        </div>
+                        </div>
+                        <div class="accordion-box">
+                        <button class="accordion-button">NorCal Qualifying Tournament<i class='bx bx-chevron-down'></i></button>
+                        <div class="accordion-content">
+                            <h3>Piedmont</h3>
+                            <ul class = "accordion-dropdown">
+                                <li>Winning Alliance - Captain</li>
+                                <li>Inspire Award 2nd Place</li>
+                                <li>Think Award</li>
+                            </ul>
+                            <h3>Santa Clara II</h3>
+                            <ul class = "accordion-dropdown">
+                                <li>Inspire Award 2nd Place/li>
+                                <li>Winning Alliance - 1st Team</li>
+                                <li>Connect Award</li>
+                            </ul>
+                        </div>
+                        </div>
                     </div>
     
-                    <!-- Accordion Section 2 -->
-                    <button class="accordion-button">Software <i class='bx bx-chevron-down'></i></button>
-                    <div class="accordion-content">
-                        <ul class = "accordion-dropdown">
-                            <li>3 Odometry pods</li>
-                            <li>Pose exponential algorithm</li>
-                            <li>PID controller</li>
-                            <li>OpenCv webcam</li>
-                            <li>Computer vision</li>
-                        </ul>
-                    </div>
                 </div>
-
+                <div class="robot-learnmore" data-aos = "fade-up">
+                    <a href="https://img1.wsimg.com/blobby/go/5757b6a5-abff-443b-b116-91919e7593eb/FTC_14259_Regionals%20Engineering%20Portfolio%20(202.pdf ">
+                    <button>Want to Learn more?
+                        <br>
+                        <span>Check out our portfolio!</span>
+                    </button>
+                    </a>
+                </div>
             </div>
         </section>
         <section class="videos">
-            <h2>Robot in Action</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/uStx4h2GDl4" frameborder="0" allowfullscreen></iframe>
+            <h1>Robot in Action</h1>
+            <div class="video-wrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/uStx4h2GDl4" frameborder="0" allowfullscreen></iframe>
+            </div>
+            
         </section>
     </main>
     <footer>
@@ -111,5 +131,28 @@
     </footer>
     <script src="js/script.js"></script>
     <script src="js/robot.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+          duration:1000,
+          offset:100
+        });
+      </script>
+      <script>
+          document.getElementById('vid').play();
+      </script>
+      <script>
+        $(document).ready(function () {
+          $(".accordion-button").on("click", function () {
+            var accordionContent = $(this).next(".accordion-content");
+            if (accordionContent.is(":visible")) {
+              accordionContent.slideUp();
+            } else {
+              accordionContent.slideDown();
+            }
+          });
+        });
+      </script>
+      
 </body>
 </html>

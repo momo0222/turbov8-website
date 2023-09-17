@@ -5,85 +5,113 @@ body{
     background-color: var(--light-grey);
 }
 main {
-    max-width: 800px;
-    margin: 100px auto;
-    background-color: var(--light-red-grey);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-
-}
+    margin-top: 100px;
+} 
 main h1{
     color: #fff;
-}
-/* Add the following styles for the slideshow */
-.slideshow-container {
-    padding-left: 10%;
+    font-weight: 500;
     position: relative;
-    margin: 20px 10px;
+}
+main h1::after{
+    background: #eee;
+    content: '';
+    display: block;
+    height: 2px;
+    margin-top: 25px;
+    width: 170px;
+}
+.robot-intro{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.robot-intro p{
+    color: #fff;
+    margin-top: 2rem;
 }
 
-.robot-slides {
+.robot-info{
+    background-color: var(--light-red-grey);
+    margin-top: 60px;
+    padding: 40px 30px;
+    padding-bottom: 80px;
+
+}
+.robot-overview{
     display: flex;
-    justify-content: center;
-    align-items: end;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 60px;
+    align-items: center;
+}
+.robot-pic{
+    position: relative;
+    max-width: 60%;
+    z-index: 30;
+}
+.robot-pic-overlay{
+    background-color: var(--primary-red);
+    position: absolute;
+    top: 20px;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    transition: width 0.3s ease;
+    
 }
 
-.robot-slides img {
-    width: 90%;
-    height: 450px;
-    overflow: hidden;
-    border-radius: 20px;
+.image{
+    position: relative;
+    width: 100%;
+    right: 20px;
+    height: auto;
+    z-index: 20;
+    transition: transform 0.3s ease;
+}
+.robot-pic:hover .image {
+    transform: scale(1.1); /* Increase the image size on hover (adjust as needed) */
 }
 
-.slider-controls {
-    text-align: center;
-    margin-top: 20px;
+.robot-pic:hover .robot-pic-overlay {
+    width: 90%; /* Adjust the overlay width on hover (adjust as needed) */
 }
-
-.slide-button {
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin: 0 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 20px;
-}
-
-/* Style the robot specs and hardware-software sections */
-/* Style the robot specs */
 .robot-specs {
+    flex: 1;
+    display: flex;
+    height: fit-content;
+    max-width: 40%;
     background-color: #f2f2f2;
-    padding: 10px;
+    padding: 30px;
     border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
     margin-top: 20px;
+    align-items:start;
 }
-
-.robot-specs h2 {
-    color: #333;
-    font-size: 24px;
+.robot-awards{
+    background-color: var(--light-grey);
+    margin-top: 60px;
+    padding: 20px 30px;
 }
-
-.robot-specs ul {
-    list-style: none;
-    padding-left: 20px;
+.robot-accolades p{
+    margin-top: 2rem;
+    color: #fff;
 }
-
-.robot-specs li {
-    margin: 5px 0;
-    font-weight: bold;
-}
-.accordion-slide{
+ .accordion-slide{
     margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
 }
+
 .accordion-button {
     cursor: pointer;
     padding: 10px;
-    background-color: #f1f1f1;
+    background-color: var(--primary-red);
+    color: #fff;
     border: none;
+    border-radius: 2px;
     text-align: left;
     width: 100%; 
     display: flex;
@@ -93,28 +121,57 @@ main h1{
 }
 .bx{
     font-size: 30px;
+    transition: transform 0.4s ease;
+} 
+.accordion-box{
+    width: 100%;
+    margin-bottom: 15px;
 }
-
+.accordion-box.active .accordion-button .bx{
+    transform: rotate(-180deg);
+}
 .accordion-content {
     display: none;
-    padding: 20px;
-    padding-left: 50px;
-    border-top: 1px solid #ddd;
+    background-color: #fff;
+    padding: 10px;
+    margin: 0;
 }
-.accordion-dropdown{
-    padding-right: 10px;
+.accordion-content ul{
+    list-style: none;
+}
+.robot-learnmore{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.robot-learnmore button{
+    outline: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #fff;
+    color: var(--light-red-grey);
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 800;
+    border: 2px solid var(--light-grey);
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);;
+}
+.robot-learnmore span{
+    color: var(--primary-red);
+}
+.robot-learnmore button:hover{
+     background-color: var(--light-red-grey);
+     color: #fff;
+     border: 2px solid #fff;
+}
+.robot-learnmore button:hover span{
+    color: #fff
 }
 /* Style the hardware-software section */
-.hardware-software {
-    margin-top: 20px;
-}
-
-.hardware-software h2 {
-    color: #333;
-    font-size: 24px;
-}
-.social a{
-    background-color: #fff;
+.videos{
+    background-color: var(--light-red-grey);
+    padding: 30px;
 }
 
 
@@ -124,26 +181,32 @@ main h1{
     color: #333;
     font-size: 24px;
 }
-
+.video-wrapper{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
 iframe {
-    width: 100%;
+    width: 80%;
     height: 400px;
     border: none;
 }
 
 @media (max-width: 810px){
-    main{
-        margin-left: 20px;
-        margin-right: 20px;
-    }
+    
+  .robot-overview{
+    flex-direction: column;
+    align-items: center ;
+  }
+  .robot-specs{
+    margin-top: 2rem;
+    max-width: 80%;
+    font-size: 16px;
+  }
   
 }
-@media (max-width: 600px){
-    .slideshow-container{
-        padding: 0;
-    }
-    .robot-slides img {
-        height: 300px;
-        width: 100%;
-    }
+@media (max-width: 400px){
+    .robot-specs{
+        font-size: 12px;
+      }
 }

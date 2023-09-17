@@ -1,12 +1,8 @@
-const buttons = document.querySelectorAll('.accordion-button');
+const accordion = document.getElementsByClassName('accordion-box');
 
-        buttons.forEach(button => {
-            button.addEventListener('click', () => {
-                const content = button.nextElementSibling;
-                if (content.style.display === 'block') {
-                    content.style.display = 'none';
-                } else {
-                    content.style.display = 'block';
-                }
-            });
-        });
+for(i=0;i<accordion.length;i++){
+    accordion[i].addEventListener('click', ()=>{
+        event.currentTarget.classList.toggle('active');
+    })
+};
+

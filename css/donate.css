@@ -2,23 +2,60 @@
 *{
     /* background-color: var(--light-grey); */
 }
-.donate {
+.donate__title {
     position: relative;
-    margin-top: 10rem;
-    margin-bottom: 3rem;
+    max-width: 100%;
+    margin-top: 60px;
+    padding: 60px 20px;
+
+    background-color: var(--light-red-grey);
+}
+.donate__title h1{
+    color: #fff;
+    font-weight: 500;
+    position: relative;
+}
+.donate{
+
+    padding: 40px 30px;
+}
+.donate__content{
+    position: relative;
+    z-index: 120;
+    background-image: url('donateback.png');
+    padding: 40px 20px;
 }
 .donate__inner{
-    margin: 30px;
-    border: 2px solid black;
-    padding: 20px;
+    position: relative;
+    color: #fff;
+    padding: 30px 10px; 
+    text-align: center;
+    border: 3px solid #fff;
     transition: 0.3s all ease;
 }
+
+
 .donate__inner:hover{
     transform: scale(1.02);
 }
-/* footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-} */
+.donate__inner button{
+    border: 2px solid var(--primary-red);
+    outline: none;
+    margin-top: 30px;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 6px;
+    background: -webkit-linear-gradient(0deg, transparent 50%, var(--primary-red) 50%);
+    background-size: 400px 80px;
+    color: #fff;
+    transition: 0.7s all ease ;
+}
+.donate__inner button:hover{
+    background-position: 200px 0;
+}
+
+@media (max-width:450px) {
+    .donate__inner button{
+        background-color: var(--primary-red);
+    }
+}

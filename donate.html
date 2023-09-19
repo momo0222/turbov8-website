@@ -25,15 +25,19 @@
             </div>
         </div>
     </header>
+    <section class="donate__title">
 
+        <h1><span class = "dynamic-input"></span></h1>
+    </section>
     <section class="donate">
         <div class="donate__content">
             <div class="donate__inner">
                 <h1>looking to help our cause?</h1>
                 <br>
                 <h1>click here!</h1>
-                <button>donate</button>
+                <a href="https://www.paypal.com/donate?token=J1Sjx4xCPMyYT6PMOPkwM65BUn8ZzAjyXhORQCjNKhY9vK7uvCgyvzrvWG2n7aeiMGXcpj_34O_EBgTW" target="_blank"><button>donate</button></a>
             </div>
+
         </div>
     </section>
     
@@ -57,7 +61,14 @@
         </ul>
         <p class="credits">Created By Joy Wang</p>
     </footer>
-
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        const typed = new Typed('.dynamic-input', {
+            strings: ["As a community team, we depend on YOU for support"],
+            typeSpeed: 50,
+            loop: false,
+        })
+    </script>
     <script src="js/script.js"></script>
 </body>
 </html>

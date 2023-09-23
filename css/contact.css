@@ -48,6 +48,8 @@ button:hover{
     cursor: pointer;
 }
 
-@media (max-width: 810px){
-
+@media (max-width: 400px){
+    .contact_form{
+        margin: 100px 10px;
+    }
 }

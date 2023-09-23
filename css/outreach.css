@@ -23,7 +23,6 @@ header .nav .nav-items, header .nav .nav-items a {
 }
 .top-content{
     margin-left: 3rem;
-   /* text-align:justify; */
 }
 .top-content h1{
     font-size: 30px;
@@ -221,4 +220,9 @@ header .nav .nav-items a:hover:before{
     width: 85%;
     
  }
+}
+@media (max-width: 400px){
+    .top-content{
+        margin-left: 1.3rem;
+    }
 }
